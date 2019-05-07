@@ -8,7 +8,7 @@ int extract();
 int getNodes(int i);
 
 /*  global var  */
-const int limit = 30;// WARNING! this program will only host limit number line in map
+const int limit = 30;// program to host limit number line in map
 char data[limit][50];   // stores file locally
 char nodes[limit][50];
 int distance=0;    // counts people who pass

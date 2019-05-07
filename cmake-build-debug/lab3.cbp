@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/stealthbomber/CLionProjects/engr476/lab3/map_host.c">
+		<Unit filename="/Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c">
 			<Option target="lab3"/>
 		</Unit>
 		<Unit filename="/Users/stealthbomber/CLionProjects/engr476/lab3/CMakeLists.txt">

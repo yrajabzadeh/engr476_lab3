@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/stealthbomber/CLionProjects/engr476/lab3/map_host.c
+/Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c
 stdio.h
 -
 stdlib.h

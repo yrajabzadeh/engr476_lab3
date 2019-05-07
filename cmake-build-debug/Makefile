@@ -123,32 +123,32 @@ lab3/fast:
 	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
 .PHONY : lab3/fast
 
-map_host.o: map_host.c.o
+pathfinder.o: pathfinder.c.o
 
-.PHONY : map_host.o
+.PHONY : pathfinder.o
 
 # target to build an object file
-map_host.c.o:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/map_host.c.o
-.PHONY : map_host.c.o
+pathfinder.c.o:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/pathfinder.c.o
+.PHONY : pathfinder.c.o
 
-map_host.i: map_host.c.i
+pathfinder.i: pathfinder.c.i
 
-.PHONY : map_host.i
+.PHONY : pathfinder.i
 
 # target to preprocess a source file
-map_host.c.i:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/map_host.c.i
-.PHONY : map_host.c.i
+pathfinder.c.i:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/pathfinder.c.i
+.PHONY : pathfinder.c.i
 
-map_host.s: map_host.c.s
+pathfinder.s: pathfinder.c.s
 
-.PHONY : map_host.s
+.PHONY : pathfinder.s
 
 # target to generate assembly for a file
-map_host.c.s:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/map_host.c.s
-.PHONY : map_host.c.s
+pathfinder.c.s:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/pathfinder.c.s
+.PHONY : pathfinder.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab3"
-	@echo "... map_host.o"
-	@echo "... map_host.i"
-	@echo "... map_host.s"
+	@echo "... pathfinder.o"
+	@echo "... pathfinder.i"
+	@echo "... pathfinder.s"
 .PHONY : help
 
 

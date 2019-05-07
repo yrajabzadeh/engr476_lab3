@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lab3.dir/map_host.c.o"
+  "CMakeFiles/lab3.dir/pathfinder.c.o"
   "lab3.pdb"
   "lab3"
 )
