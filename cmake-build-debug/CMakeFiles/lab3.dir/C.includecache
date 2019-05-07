@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/stealthbomber/CLionProjects/engr476/lab3/map_host.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+

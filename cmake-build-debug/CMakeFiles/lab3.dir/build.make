@@ -57,27 +57,27 @@ include CMakeFiles/lab3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab3.dir/flags.make
 
-CMakeFiles/lab3.dir/main.c.o: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab3.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lab3.dir/main.c.o   -c /Users/stealthbomber/CLionProjects/engr476/lab3/main.c
+CMakeFiles/lab3.dir/map_host.c.o: CMakeFiles/lab3.dir/flags.make
+CMakeFiles/lab3.dir/map_host.c.o: ../map_host.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab3.dir/map_host.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lab3.dir/map_host.c.o   -c /Users/stealthbomber/CLionProjects/engr476/lab3/map_host.c
 
-CMakeFiles/lab3.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab3.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/stealthbomber/CLionProjects/engr476/lab3/main.c > CMakeFiles/lab3.dir/main.c.i
+CMakeFiles/lab3.dir/map_host.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab3.dir/map_host.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/stealthbomber/CLionProjects/engr476/lab3/map_host.c > CMakeFiles/lab3.dir/map_host.c.i
 
-CMakeFiles/lab3.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab3.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stealthbomber/CLionProjects/engr476/lab3/main.c -o CMakeFiles/lab3.dir/main.c.s
+CMakeFiles/lab3.dir/map_host.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab3.dir/map_host.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stealthbomber/CLionProjects/engr476/lab3/map_host.c -o CMakeFiles/lab3.dir/map_host.c.s
 
 # Object files for target lab3
 lab3_OBJECTS = \
-"CMakeFiles/lab3.dir/main.c.o"
+"CMakeFiles/lab3.dir/map_host.c.o"
 
 # External object files for target lab3
 lab3_EXTERNAL_OBJECTS =
 
-lab3: CMakeFiles/lab3.dir/main.c.o
+lab3: CMakeFiles/lab3.dir/map_host.c.o
 lab3: CMakeFiles/lab3.dir/build.make
 lab3: CMakeFiles/lab3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable lab3"

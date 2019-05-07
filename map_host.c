@@ -11,7 +11,7 @@ void repstr (char* str1);
 //  global var
 const int limit = 30;
 char data[limit][50];   // stores file locally
-int distance=0, lestDist=0, lineNum;    // counts people who pass
+int distance=0, lestDist=0, lineNum;    // counts number of passes
 char path[limit*4] = "A/", temp[2];
 int pathLen = 2, in =0;
 char nodeL='A', nodeL2, findNode='H', lestNode='A';
