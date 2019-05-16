@@ -57,27 +57,27 @@ include CMakeFiles/lab3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab3.dir/flags.make
 
-CMakeFiles/lab3.dir/pathfinder.c.o: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/pathfinder.c.o: ../pathfinder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab3.dir/pathfinder.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lab3.dir/pathfinder.c.o   -c /Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c
+CMakeFiles/lab3.dir/dijkstra.c.o: CMakeFiles/lab3.dir/flags.make
+CMakeFiles/lab3.dir/dijkstra.c.o: ../dijkstra.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab3.dir/dijkstra.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lab3.dir/dijkstra.c.o   -c /Users/stealthbomber/CLionProjects/engr476/lab3/dijkstra.c
 
-CMakeFiles/lab3.dir/pathfinder.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab3.dir/pathfinder.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c > CMakeFiles/lab3.dir/pathfinder.c.i
+CMakeFiles/lab3.dir/dijkstra.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab3.dir/dijkstra.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/stealthbomber/CLionProjects/engr476/lab3/dijkstra.c > CMakeFiles/lab3.dir/dijkstra.c.i
 
-CMakeFiles/lab3.dir/pathfinder.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab3.dir/pathfinder.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c -o CMakeFiles/lab3.dir/pathfinder.c.s
+CMakeFiles/lab3.dir/dijkstra.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab3.dir/dijkstra.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/stealthbomber/CLionProjects/engr476/lab3/dijkstra.c -o CMakeFiles/lab3.dir/dijkstra.c.s
 
 # Object files for target lab3
 lab3_OBJECTS = \
-"CMakeFiles/lab3.dir/pathfinder.c.o"
+"CMakeFiles/lab3.dir/dijkstra.c.o"
 
 # External object files for target lab3
 lab3_EXTERNAL_OBJECTS =
 
-lab3: CMakeFiles/lab3.dir/pathfinder.c.o
+lab3: CMakeFiles/lab3.dir/dijkstra.c.o
 lab3: CMakeFiles/lab3.dir/build.make
 lab3: CMakeFiles/lab3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable lab3"

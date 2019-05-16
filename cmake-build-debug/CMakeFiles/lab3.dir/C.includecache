@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c
+/Users/stealthbomber/CLionProjects/engr476/lab3/dijkstra.c
 stdio.h
+-
+stdlib.h
+-
+stdbool.h
 -
 

@@ -123,32 +123,32 @@ lab3/fast:
 	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
 .PHONY : lab3/fast
 
-pathfinder.o: pathfinder.c.o
+dijkstra.o: dijkstra.c.o
 
-.PHONY : pathfinder.o
+.PHONY : dijkstra.o
 
 # target to build an object file
-pathfinder.c.o:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/pathfinder.c.o
-.PHONY : pathfinder.c.o
+dijkstra.c.o:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/dijkstra.c.o
+.PHONY : dijkstra.c.o
 
-pathfinder.i: pathfinder.c.i
+dijkstra.i: dijkstra.c.i
 
-.PHONY : pathfinder.i
+.PHONY : dijkstra.i
 
 # target to preprocess a source file
-pathfinder.c.i:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/pathfinder.c.i
-.PHONY : pathfinder.c.i
+dijkstra.c.i:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/dijkstra.c.i
+.PHONY : dijkstra.c.i
 
-pathfinder.s: pathfinder.c.s
+dijkstra.s: dijkstra.c.s
 
-.PHONY : pathfinder.s
+.PHONY : dijkstra.s
 
 # target to generate assembly for a file
-pathfinder.c.s:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/pathfinder.c.s
-.PHONY : pathfinder.c.s
+dijkstra.c.s:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/dijkstra.c.s
+.PHONY : dijkstra.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab3"
-	@echo "... pathfinder.o"
-	@echo "... pathfinder.i"
-	@echo "... pathfinder.s"
+	@echo "... dijkstra.o"
+	@echo "... dijkstra.i"
+	@echo "... dijkstra.s"
 .PHONY : help
 
 

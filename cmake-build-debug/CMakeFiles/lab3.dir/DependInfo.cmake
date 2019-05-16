@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c" "/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles/lab3.dir/pathfinder.c.o"
+  "/Users/stealthbomber/CLionProjects/engr476/lab3/dijkstra.c" "/Users/stealthbomber/CLionProjects/engr476/lab3/cmake-build-debug/CMakeFiles/lab3.dir/dijkstra.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

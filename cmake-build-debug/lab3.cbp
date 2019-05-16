@@ -76,7 +76,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/stealthbomber/CLionProjects/engr476/lab3/pathfinder.c">
+		<Unit filename="/Users/stealthbomber/CLionProjects/engr476/lab3/dijkstra.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/Users/stealthbomber/CLionProjects/engr476/lab3/map.txt">
 			<Option target="lab3"/>
 		</Unit>
 		<Unit filename="/Users/stealthbomber/CLionProjects/engr476/lab3/CMakeLists.txt">

@@ -1,44 +1,77 @@
 #include<stdio.h>
-//#include<conio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 #define INFINITY 9999
 #define MAX 10
+#define N 10
 
-void dijkstra(int G[MAX][MAX],int n,int startnode);
+void dijkstra(int** G,int n,int startnode);
+
 
 int main()
 {
-    int G[MAX][MAX],i,j,n,u; //variables declared, matrix G with maximum of ten elements
-    printf("Enter no. of vertices:"); //entering no. of elements
-    scanf("%d",&n);
-    printf("\nEnter the adjacency matrix:\n"); //the adjacency matrix(weighted matrix is entered)
-    for(i=0;i<n;i++)
-        for(j=0;j<n;j++)
-            scanf("%d",&G[i][j]);
+    int i,j,n=0,u; //matrix G with maximum of ten elements
+        FILE *fp;
+    char ch;
+    /*fp = fopen("map.txt", "r");
 
-    printf("\nEnter the starting node:");
-    scanf("%d",&u);
+    while(!feof(fp))
+    {
+        ch = fgetc(fp);
+        if (ch == '\n')
+        {
+            n++;
+        }
+    }
+    printf("n = %d", n);
+    fclose(fp);*/
+    printf("Enter number of nodes:"); //entering number of elements
+    scanf("%d",&n);
+        fp = fopen("map.txt", "r");
+        int** G = (int **) malloc(10 * sizeof(int));
+    for(i=0; i<10; i++)
+        G[i]=malloc(8* sizeof(int));
+    for(i=0;i<n;i++) {
+        for (j = 0; j < n; j++) {
+            if(!fscanf(fp, "%d", &G[i][j]))
+            break;
+        }
+    }
+    fclose(fp);
+
+    for(i=0;i<n;i++)
+        for (j = 0; j < n; j++){
+            printf("map = %d", G[i][j] );
+        }
+
+    printf("\nEnter the starting node number:"); //should be starting from 0(A)
+    scanf("%d", &u);
     dijkstra(G,n,u);
 
     return 0;
 }
 
-void dijkstra(int G[MAX][MAX],int n,int startnode)
+    void dijkstra(int** G,int n,int startnode)
 {
 
     int cost[MAX][MAX],distance[MAX],pred[MAX];
     int visited[MAX],count,mindistance,nextnode,i,j;
+    printf("im here");
+/*
+pred[] stores the previous value of each node
+count gives the number of nodes visited
+create the cost matrix
+*/
 
-//pred[] stores the predecessor of each node
-//count gives the number of nodes seen so far
-//create the cost matrix
     for(i=0;i<n;i++)
         for(j=0;j<n;j++)
             if(G[i][j]==0)
-                cost[i][j]=INFINITY; //cost declared as infinity if there's no direct path
+                cost[i][j]=INFINITY;
             else
                 cost[i][j]=G[i][j];
 
-//initialize pred[],distance[] and visited[]
+// pred[],distance[] and visited[]
     for(i=0;i<n;i++)
     {
         distance[i]=cost[startnode][i];
@@ -54,7 +87,7 @@ void dijkstra(int G[MAX][MAX],int n,int startnode)
     {
         mindistance=INFINITY;
 
-//nextnode gives the node at minimum distance
+//gives the node at shortest distance
         for(i=0;i<n;i++)
             if(distance[i]<mindistance&&!visited[i])
             {
@@ -62,7 +95,8 @@ void dijkstra(int G[MAX][MAX],int n,int startnode)
                 nextnode=i;
             }
 
-//check if a better path exists through nextnode
+//check if a better path exists
+
         visited[nextnode]=1;
         for(i=0;i<n;i++)
             if(!visited[i])
@@ -74,18 +108,19 @@ void dijkstra(int G[MAX][MAX],int n,int startnode)
         count++;
     }
 
-//print the path and distance of each node
+//prints the path and distance of each node
+
     for(i=0;i<n;i++)
         if(i!=startnode)
         {
             printf("\nDistance of node%d=%d",i,distance[i]);
             printf("\nPath=%d",i);
-
             j=i;
             do
             {
                 j=pred[j];
                 printf("<-%d",j);
-            }while(j!=startnode);
+            }
+            while(j!=startnode);
         }
 }
